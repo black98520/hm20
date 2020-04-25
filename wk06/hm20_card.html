@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm20 : Chirstmas Card</title>
+		<style>
+            @keyframes RedColor1 {
+                from {color: red;}
+                6.25% { transform: translateY(-10px);}
+                25% {color: green;}
+                50% {color: red;}
+                75% {color: green;}
+                to {color: red;}
+            }
+            @keyframes GreenColor1 {
+                from {color: green;}
+                12.5% { transform: translateY(-10px);}
+                25% {color: red;}
+                50% {color: green;}
+                75% {color: red;}
+                to {color: green;}
+            }
+            @keyframes RedColor2 {
+                from {color: red;}
+                18.75% { transform: translateY(-10px);}
+                25% {color: green;}
+                50% {color: red;}
+                75% {color: green;}
+                to {color: red;}
+            }
+            @keyframes GreenColor2 {
+                from {color: green;}
+                25% {color: red; transform: translateY(-10px);}
+                50% {color: green;}
+                75% {color: red;}
+                to {color: green;}
+            }
+            @keyframes RedColor3 {
+                from {color: red;}
+                25% {color: green;}
+                31.25% {transform: translateY(-10px);}
+                50% {color: red;;}
+                75% {color: green;}
+                to {color: red;}
+            }
+            @keyframes GreenColor3 {
+                from {color: green;}
+                25% {color: red;}
+                37.5% { transform: translateY(-10px);}
+                50% {color: green;}
+                75% {color: red;}
+                to {color: green;}
+            }
+            @keyframes RedColor4 {
+                from {color: red;}
+                25% {color: green;}
+                43.75% {transform: translateY(-10px);}
+                50% {color: red;}
+                75% {color: green;}
+                to {color: red;}
+            }
+            @keyframes GreenColor4 {
+                from {color: green;}
+                25% {color: red;}
+                50% {color: green; transform: translateY(-10px);}
+                75% {color: red;}
+                to {color: green;}
+            }
+            @keyframes RedColor5 {
+                from {color: red;}
+                25% {color: green;}
+                50% {color: red;}
+                56.25% {transform: translateY(-10px);}
+                75% {color: green;}
+                to {color: red;}
+            }
+            @keyframes GreenColor5 {
+                from {color: green;}
+                25% {color: red;}
+                50% {color: green;}
+                62.5% {transform: translateY(-10px);}
+                75% {color: red;}
+                to {color: green;}
+            }
+            @keyframes RedColor6 {
+                from {color: red;}
+                25% {color: green;}
+                50% {color: red;}
+                68.75% {transform: translateY(-10px);}
+                75% {color: green;}
+                to {color: red;}
+            }
+            @keyframes GreenColor6 {
+                from {color: green;}
+                25% {color: red;}
+                50% {color: green;}
+                75% {color: red; transform: translateY(-10px);}
+                to {color: green;}
+            }
+            @keyframes RedColor7 {
+                from {color: red;}
+                25% {color: green;}
+                50% {color: red; transform: translateY(-10px);}
+                75% {color: green;}
+                81.25% {transform: translateY(-10px);}
+                to {color: red;}
+            }
+            @keyframes GreenColor7 {
+                from {color: green;}
+                25% {color: red;}
+                50% {color: green;}
+                75% {color: red;}
+                87.5% { transform: translateY(-10px);}
+                to {color: green;}
+            }
+            @keyframes RedColor8 {
+                from {color: red;}
+                25% {color: green;}
+                50% {color: red;}
+                75% {color: green;}
+                93.75% {transform: translateY(-10px);}
+                to {color: red; transform: translateY(-10px);}
+            }
+            .changered1 {
+                animation-name: RedColor1;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changered2 {
+                animation-name: RedColor2;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changered3 {
+                animation-name: RedColor3;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changered4 {
+                animation-name: RedColor4;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changered5 {
+                animation-name: RedColor5;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changered6 {
+                animation-name: RedColor6;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changered7 {
+                animation-name: RedColor7;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changered8 {
+                animation-name: RedColor8;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changegreen1 {
+                animation-name: GreenColor1;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changegreen2 {
+                animation-name: GreenColor2;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changegreen3 {
+                animation-name: GreenColor3;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changegreen4 {
+                animation-name: GreenColor4;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changegreen5 {
+                animation-name: GreenColor5;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changegreen6 {
+                animation-name: GreenColor6;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            .changegreen7 {
+                animation-name: GreenColor7;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            h3 {
+                font: bold 45px "Times New Roman", serif;
+            }
+            div {
+                display: inline-block;
+                position: absolute;
+                width: 600px;
+                height: 600px;
+                border: 30px solid lightcoral; 
+                background-size: 600px 600px;
+                background-image: url("media/christmas border.png");
+                background-position: center center;
+            }
+            #round { border-image: url("media/christmas border2.jpg") 30 round;}
+            div > p {
+                display: inline-block;
+                position: absolute;
+                height: 50px;
+                width: 30px;
+                font: bold 50px "Times New Roman", serif;
+            }
+            img { display: block; margin: 40px 20px 25px 72px; }
+            @keyframes shadow {
+                from {text-shadow: 2px 2px 3px green;}
+                to {text-shadow: 2px 2px 8px gold;}
+            }
+            p {
+                animation: shadow;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+			#hm20 {
+				position: absolute;
+				top: 750px;
+				left: 265px;
+				width: 120px;
+                height: 30px;
+				padding: 5px;
+                border: 1px solid darkgreen;
+				background: green;
+				font: bold 17px consolas, sans-serif;
+			}
+			
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+        <h3 class="changered1" style="display: inline-block;">M</h3>
+        <h3 class="changegreen1" style="display: inline-block;">e</h3>
+        <h3 class="changered2" style="display: inline-block;">r</h3>
+        <h3 class="changegreen2" style="display: inline-block;">r</h3>
+        <h3 class="changered3" style="display: inline-block;">y</h3>
+        <h3 style="display: inline-block;"></h3>
+        <h3 class="changegreen3" style="display: inline-block;">C</h3>
+        <h3 class="changered4" style="display: inline-block;">h</h3>
+        <h3 class="changegreen4" style="display: inline-block;">r</h3>
+        <h3 class="changered5" style="display: inline-block;">i</h3>
+        <h3 class="changegreen5" style="display: inline-block;">s</h3>
+        <h3 class="changered6" style="display: inline-block;">t</h3>
+        <h3 class="changegreen6" style="display: inline-block;">m</h3>
+        <h3 class="changered7" style="display: inline-block;">a</h3>
+        <h3 class="changegreen7" style="display: inline-block;">s</h3>
+        <h3 class="changered8" style="display: inline-block;">!</h3>
+        <hr>
+        <div id="round">
+        <img src="media/christmastree.png" width="450" height="500" alt="크리스마스 트리">
+        <p style="left: 160px; top: -10px; transform: rotate(-40deg); color: darkgreen;">H</p>
+        <p style="left: 220px; top: -45px; transform: rotate(-20deg); color: red;">A</p>
+        <p style="left: 280px; top: -60px; color: darkgreen;">P</p>
+        <p style="left: 340px; top: -45px; transform: rotate(20deg); color: red;">P</p>
+        <p style="left: 390px; top: -10px; transform: rotate(40deg); color: darkgreen;">Y</p>
+        <p style="left: 250px; top: 60px;"><img src="media/angel.png" width="60" height="60" alt="천사장식"></p>
+        <p style="left: 100px; top: 110px;"><img src="media/bell.png" width="60" height="60" alt="벨장식"></p>
+        <p style="left: 60px; top: 290px;"><img src="media/cake.png" width="75" height="70" alt="케이크장식"></p>
+        <p style="left: 300px; top: 150px;"><img src="media/candy.png" width="50" height="60" alt="사탕장식"></p>
+        <p style="left: 200px; top: 270px;"><img src="media/gift1.png" width="80" height="80" alt="선물장식1"></p>
+        <p style="left: 90px; top: 180px;"><img src="media/gift2.png" width="50" height="50" alt="선물장식2"></p>
+        <p style="left: 180px; top: 100px;"><img src="media/ring.png" width="90" height="90" alt="화환장식"></p>
+        <p style="left: 250px; top: 180px;"><img src="media/rudolph.png" width="70" height="80" alt="루돌프장식"></p>
+        <p style="left: 150px; top: 210px;"><img src="media/santa.png" width="60" height="70" alt="산타장식"></p>
+        <p style="left: 310px; top: 270px;"><img src="media/snowman.png" width="60" height="70" alt="눈사람장식"></p>
+        <p style="left: 150px; top: 40px;"><img src="media/sock.png" width="50" height="50" alt="양말장식"></p>
+        <p style="left: 80px; top: 300px; transform: rotate(50deg); color: darkgreen;">N</p>
+        <p style="left: 130px; top: 355px; transform: rotate(35deg); color: red;">E</p>
+        <p style="left: 190px; top: 390px; transform: rotate(20deg); color: darkgreen;">W</p>
+        <p style="left: 350px; top: 390px; transform: rotate(-20deg); color: red;">Y</p>
+        <p style="left: 400px; top: 365px; transform: rotate(-30deg); color: darkgreen;">E</p>
+        <p style="left: 440px; top: 335px; transform: rotate(-40deg); color: red;">A</p>
+        <p style="left: 480px; top: 300px; transform: rotate(-50deg); color: darkgreen;">R</p>
+        </div>
+        <embed src="media/Ariana Grande - Santa Tell Me (Audio).mp3" autostart=true 
+                      hidden=true loop=infinite></embed>
+		<div id="hm20">
+			hm20 - 조재윤
+		</div>
+		
+	</body>
+
+</html>
+
