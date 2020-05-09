@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm20 : 나는 누구인가?</title>
+    <style>
+      * {margin: 0; padding: 0;}
+      body {background: #5ABEFF; height: 100%;}
+      header {position: fixed; top: 0; left: 0; width: 100%; height: 75px; float: left;}
+      .wrapper {width: 1170px; margin: 0 auto;}
+      h1 {line-height: 75px; margin-left: 20px; float: left; font-size: 40px; color: #B3741B;}
+      #menu {float: right;}
+      #menu li {list-style-type: none; padding: 0px 15px; float: left;}
+      #menu li a {display: block; line-height: 75px; color: black; padding: 0 15px; text-decoration: none;}
+      #menu li a:hover {color: #9EB2E6;}
+      section {position: fixed; width: 100%; height: 80%; top: 75px; text-align: center;}
+      footer {position: fixed; width: 100%; height: 10%; bottom: 0; padding-top: 15px;
+              font-size: 15px; text-align: right; background: #2D7DB3; color: white;}
+      h2 {text-align: center; font-size: 50px; color: #2D7DB3;}
+      .box {position: fixed; left: 50%; margin-left: -300px; width: 600px; height: 350px; 
+            bottom: 15%; background: #FFBB59; font-weight: bold; color: #2D7DB3;}
+      form {position: fixed; left: 50%; margin-left: -150px; bottom: 15%;}
+      input {border: 2px solid #73C7FF; border-radius: 5px;
+             color: #FFBB59;}
+      table {font-size: 20px; margin-top: 20px; color: black; text-align: left;
+            margin-left: 20%;}
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header>
+      <div id="wrapper">
+        <h1>HM20</h1>
+        <nav id="menu">
+           <li><a href="hm20_homepage.html">Home</a></li>
+           <li><a href="hm20_daily.html">Daily</a></li>
+           <li><a href="hm20_favorite.html">Favorite</a></li>
+           <li><a href="hm20_club.html">Club</a></li>
+           <li><a href="hm20_x-mas.html">X-mas</a></li>
+           <li><a href="hm20_about.html">About</a></li>
+       </nav>
+      </div>
+    </header>
+    <section>
+      <h2>Join a Travel Club</h2>
+        <img src="media/비행기.png" width="300" height="300">
+        <img src="media/지구본.png" width="300" height="300">
+        <img src="media/캐리어.png" width="300" height="300">
+        <article class="box">
+            <table>
+                <caption>&ltTravel Club&gt 회원 모집</caption>
+                <tbody>
+                  <tr><td>모집 인원:</td><td>00명</td></tr>
+                  <tr><td>모집 기간:</td><td>2020.05.05 ~ 2020.06.05</td></tr>
+                  <tr><td>가입 자격:</td><td>여행을 좋아하는 사람 누구나!!</td></tr>
+                </tbody>
+              </table>
+            <form>
+                <fieldset style="width: 300px;">
+                <legend>회원정보</legend>
+                성명: <input type="text" placeholder="홍길동"><br>
+                성별: 남자 <input type="radio" name="gender" value="1">
+                      여자 <input type="radio" name="gender" value="2"><br>
+                이메일: <input type="email" placeholder="id@host"><br>
+                전화번호: <input type="tel" placeholder="010-1234-5678"><br>
+                희망 여행형태: 패키지 <input type="radio" name="travel" value="1">
+                              자유 <input type="radio" name="travel" value="2"><br>
+                희망 여행지: <input type="text" placeholder="대한민국"><br>
+                </fieldset>
+                <small>문의: Tel. 010 - 1111 - 1111</small>
+            </form>
+        </article>
+    </section>
+    <footer>
+        HM20<br>20171248 조재윤<br>Club
+    </footer>
+  </body>
+</html>

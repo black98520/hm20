@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm20 : 나는 누구인가?</title>
+    <style>
+      * {margin: 0; padding: 0;}
+      body {background: #E782FF; height: 100%;}
+      header {position: fixed; top: 0; left: 0; width: 100%; height: 75px; float: left;}
+      .wrapper {width: 1170px; margin: 0 auto;}
+      h2 {line-height: 75px; margin-left: 20px; float: left; font-size: 25px;}
+      #menu {float: right; font-weight: bold;}
+      #menu li {list-style: none; padding: 0px 15px; float: left;}
+      #menu li a {display: block; line-height: 75px; color: black; padding: 0 15px; text-decoration: none;}
+      #menu li a:hover {color: #9EB2E6;}
+      section {position: fixed; width: 100%; height: 80%; top: 75px; text-align: center;}
+      h2 {text-align: center;}
+      table {position: fixed; left: 50%; border-collapse: collapse;
+             margin-top: 15px; margin-left: 50px; font-size: 20px;}
+      td {text-align: left; padding: 5px; font-weight: bold;}
+      #mamamoo {position: fixed; left: 1%; bottom: 30%; float: left;}
+      #work {position: fixed; left: 50%; bottom: 5%; margin: 10px; margin-left: 100px;}
+      tfoot td {text-align: center;}
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header>
+      <div id="wrapper">
+        <h2>My Favorite Singer 3</h2>
+        <nav id="menu">
+            <li><a href="hm20_singer.html">Home</a></li>
+            <li><a href="hm20_younha.html">윤하</a></li>
+            <li><a href="hm20_mamamoo.html">마마무</a></li>
+            <li><a href="hm20_youndohyun.html">윤도현</a></li>
+       </nav>
+      </div>
+    </header>
+    <section>
+        <h3>마마무</h3>
+        <img id="mamamoo" src="media/마마무.jpg" width="500">
+        <table>
+            <tbody>
+              <tr><td>이름:</td><td>마마무(Mamamoo)</td></tr>
+              <tr><td>멤버:</td><td>솔라, 문별, 휘인, 화사</td></tr>
+              <tr><td>장르:</td><td>RnB, 댄스 팝, 팝</td></tr>
+              <tr><td>소속사:</td><td>RBW</td></tr>
+              <tr><td>대표곡:</td><td>HIP, 고고베베, 나로 말할 것 같으면</td></tr>
+              <tr><td>최애곡:</td><td>놓지 않을게</td></tr>
+            </tbody>
+          </table>
+        <table id="work">
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=0H3KxbnoIxU" target="_blank">
+                        <img id="witch" src="media/놓지 않을게 - memory.jpg" width="250" height="250" alt="놓지 않을게"></a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot><tr><td>&lt놓지 않을게&gt</td></tr></tfoot>
+        </table>   
+    </section>
+  </body>
+</html>

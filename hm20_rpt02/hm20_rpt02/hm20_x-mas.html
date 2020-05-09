@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm20 : 나는 누구인가?</title>
+    <style>
+      * {margin: 0; padding: 0;}
+      body {background: #FF9987; height: 100%;}
+      header {position: fixed; top: 0; left: 0; width: 100%; height: 75px; float: left;}
+      .wrapper {width: 1170px; margin: 0 auto;}
+      h1 {line-height: 75px; margin-left: 20px; float: left; font-size: 40px; color: #B34C3B}
+      #menu {float: right;}
+      #menu li {list-style-type: none; padding: 0px 15px; float: left;}
+      #menu li a {display: block; line-height: 75px; color: black; padding: 0 15px; text-decoration: none;}
+      #menu li a:hover {color: #9EB2E6;}
+      section {position: fixed; width: 100%; height: 80%; top: 75px;}
+      footer {position: fixed; width: 100%; height: 10%; bottom: 0; padding-top: 15px;
+              font-size: 15px; text-align: right; background: #4DB386; color: white;}
+      h2 {text-align: center; color:#4DB386; font-size: 30px;}
+      div.box {background: #FF9987; width: 600px; height: 600px; margin-left: -300px;
+               position: fixed; top: 150px; left: 50%; border: 30px solid coral; 
+               border-image: url("media/christmas border2.jpg") 30 round;
+               background-size: 600px 600px; 
+               background-image: url("media/christmas border.png");}
+      #tree {display: inline-block; position: fixed; top: 20%; left: 50%; margin-left: -191px;}
+      div > p {display: inline-block; position: absolute; height: 50px; width: 30px;
+               font: bold 50px "Times New Roman", serif; text-align: center;}
+      @keyframes cred {
+          from {color: #F50501;}
+          to {color: #00A835;}
+          }
+      @keyframes cgreen {
+        from {color: #00A835;}
+          to {color: #F50501;}
+      }
+      #Red {animation: cred 1s ease-in infinite alternate;}
+      #Green {animation: cgreen 1s ease-in infinite alternate;}
+      #merry {left: 50%; margin-left: -106px; top: -5px; letter-spacing: 6px;
+              animation: cred 1s ease-in infinite alternate;}
+      #x-mas {left: 50%; margin-left: -168px; bottom: 20%; letter-spacing: 6px;
+              animation: cgreen 1s ease-in infinite alternate;}
+      #invite {position: fixed; bottom: 15%; left: 50%; margin-left: -100px; 
+               width: 250px; height: 100px; padding: 5px; background: #B34C3B;
+               opacity: 90%; text-align: center; font-weight: bold;}
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header>
+      <div id="wrapper">
+        <h1>HM20</h1>
+        <nav id="menu">
+           <li><a href="hm20_homepage.html">Home</a></li>
+           <li><a href="hm20_daily.html">Daily</a></li>
+           <li><a href="hm20_favorite.html">Favorite</a></li>
+           <li><a href="hm20_club.html">Club</a></li>
+           <li><a href="hm20_x-mas.html">X-mas</a></li>
+           <li><a href="hm20_about.html">About</a></li>
+       </nav>
+      </div>
+    </header>
+    <section>
+      <br><h2>Come Over to X-mas Party</h2>
+      <div class="box">
+      <img id="tree" src="media/christmastree.png" width="450" height="500" alt="크리스마스 트리">
+      <p id="merry">MERRY</p>
+      <p style="left: 60%; top: 25%;"><img src="media/angel.png" width="60" height="60" alt="천사장식"></p>
+      <p style="left: 40%; top: 17%;"><img src="media/bell.png" width="60" height="60" alt="벨장식"></p>
+      <p style="left: 46%; top: 53%;"><img src="media/cake.png" width="75" height="70" alt="케이크장식"></p>
+      <p style="left: 56%; top: 35%;"><img src="media/candy.png" width="50" height="60" alt="사탕장식"></p>
+      <p style="left: 39%; top: 42%;"><img src="media/gift1.png" width="80" height="80" alt="선물장식1"></p>
+      <p style="left: 63%; top: 45%;"><img src="media/gift2.png" width="50" height="50" alt="선물장식2"></p>
+      <p style="left: 43%; top: 25%;"><img src="media/ring.png" width="90" height="90" alt="화환장식"></p>
+      <p style="left: 30%; top: 25%;"><img src="media/rudolph.png" width="70" height="80" alt="루돌프장식"></p>
+      <p style="left: 26%; top: 60%;"><img src="media/santa.png" width="60" height="70" alt="산타장식"></p>
+      <p style="left: 66%; top: 54%;"><img src="media/snowman.png" width="60" height="70" alt="눈사람장식"></p>
+      <p style="left: 26%; top: 42%;"><img src="media/sock.png" width="50" height="50" alt="양말장식"></p>
+      <p id="x-mas">CHRISTMAS</p>
+      </div>
+      <div id="invite">
+          파티 장소: HTML 호텔 연회장<br>
+          파티 날짜: 2020년 5월 25일<br>
+          파티 시간: 오후 6시<br>
+          드레스 코드: RED
+      </div>
+    </section>
+
+    <footer>
+      HM20<br>20171248 조재윤<br>X-mas
+    </footer>
+  </body>
+</html>
